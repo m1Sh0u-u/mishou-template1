@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1d1d1d;
+    color: #e1e1e1;
+    text-decoration: none;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #e1e1e1;
+}
+.navbar > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 52rem;
+}
+.navbar a,
+.dropdown-toggle {
+  display: block;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font: inherit;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  transform: scale(1.2);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: max-content;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  border: 2px solid #e1e1e1;
+}
+
+.dropdown-menu[hidden] {
+  display: none;
+}
+.navbar img.logo {
+  display: block;
+  max-height: 2rem;
+  width: auto;
+  height: auto;
+  padding-left: 0.7rem;
+}
+header {
+  text-align: center;
+  padding: 4rem;
+}
+main {
+  padding: 4rem;
+}
+header {
+  margin-top: rem;
+}
+main .sec1 {
+  margin-top: 1rem;
+}
+main .sec2 {
+  margin-top: 5rem;
+}
+main .sec3 {
+  margin-top: 5rem;
+}
+.footer {
+  border-top: 2px solid #e1e1e1;
+  padding: 2rem 4rem;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+.footer h2 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.footer ul {
+  list-style: none;
+}
+.footer li + li {
+  margin-top: 0.5rem;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
